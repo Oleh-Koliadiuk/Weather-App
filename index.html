@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Weather App</title>
+
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./assets/icons/site.webmanifest" />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script type="module" src="./src/app.js" defer></script>
+  </head>
+
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h1 class="logo">Weather App</h1>
+        </div>
+
+        <nav class="city-navigation" aria-label="Cities">
+          <ul class="city-list">
+            <li>
+              <button class="city-button active" type="button" data-city="Kyiv">
+                Kyiv
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Vinnytsia">
+                Vinnytsia
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Lutsk">
+                Lutsk
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Dnipro">
+                Dnipro
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Donetsk">
+                Donetsk
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Zhytomyr">
+                Zhytomyr
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Uzhhorod">
+                Uzhhorod
+              </button>
+            </li>
+
+            <li>
+              <button
+                class="city-button"
+                type="button"
+                data-city="Zaporizhzhia"
+              >
+                Zaporizhzhia
+              </button>
+            </li>
+
+            <li>
+              <button
+                class="city-button"
+                type="button"
+                data-city="Ivano-Frankivsk"
+              >
+                Ivano-Frankivsk
+              </button>
+            </li>
+
+            <li>
+              <button
+                class="city-button"
+                type="button"
+                data-city="Kropyvnytskyi"
+              >
+                Kropyvnytskyi
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Luhansk">
+                Luhansk
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Lviv">
+                Lviv
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Mykolaiv">
+                Mykolaiv
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Odesa">
+                Odesa
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Poltava">
+                Poltava
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Rivne">
+                Rivne
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Sumy">
+                Sumy
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Ternopil">
+                Ternopil
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Kharkiv">
+                Kharkiv
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Kherson">
+                Kherson
+              </button>
+            </li>
+
+            <li>
+              <button
+                class="city-button"
+                type="button"
+                data-city="Khmelnytskyi"
+              >
+                Khmelnytskyi
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Cherkasy">
+                Cherkasy
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Chernivtsi">
+                Chernivtsi
+              </button>
+            </li>
+
+            <li>
+              <button class="city-button" type="button" data-city="Chernihiv">
+                Chernihiv
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <header class="header">
+          <div class="header-actions">
+            <button
+              class="theme-button"
+              type="button"
+              aria-label="Change theme"
+            >
+              ☁️
+            </button>
+
+            <button class="unit-button" type="button">°C</button>
+          </div>
+        </header>
+
+        <section class="weather">
+          <div class="container">
+            <div class="weather-header">
+              <div>
+                <h2 class="city-name">Kyiv</h2>
+
+                <p class="weather-description">Current weather conditions</p>
+              </div>
+
+              <button class="refresh-button" type="button">↻ Refresh</button>
+            </div>
+
+            <div class="weather-card">
+              <p class="temperature"></p>
+              <p class="humidity"></p>
+              <p class="apparent-temperature"></p>
+              <p class="precipitation"></p>
+              <p class="wind-speed"></p>
+              <p class="weather-code"></p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <p>Weather App · Weather data by Open-Meteo</p>
+
+      <p>© Oleh Koliadiuk</p>
+    </footer>
+  </body>
+</html>
